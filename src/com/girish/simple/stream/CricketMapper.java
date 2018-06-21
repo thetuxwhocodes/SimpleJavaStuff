@@ -24,6 +24,9 @@ public class CricketMapper {
 		cricketers.sort((c1, c2) -> c1.getName().compareTo(c2.getName()));
 		System.out.println("Sorted by Name: " + cricketers);
 		
+		cricketers.sort((c1, c2) -> c1.getCountry().compareTo(c2.getCountry()));
+		System.out.println("Sorted by Country: " + cricketers);
+		
 		List<String> namesOnly = cricketers.stream().map(c->c.getName()).collect(Collectors.toList());
 		System.out.println("namesOnly = " + namesOnly);
 
