@@ -21,6 +21,9 @@ public class CricketMapper {
 		cricketers.add(new Cricketer("Neil Wagner", "New Zealand", false));
 		cricketers.stream().forEach(System.out::println);
 		
+		cricketers.sort((c1, c2) -> c1.getName().compareTo(c2.getName()));
+		System.out.println("Sorted by Name: " + cricketers);
+		
 		List<String> namesOnly = cricketers.stream().map(c->c.getName()).collect(Collectors.toList());
 		System.out.println("namesOnly = " + namesOnly);
 
