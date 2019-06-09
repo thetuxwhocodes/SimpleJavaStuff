@@ -3,7 +3,7 @@ package com.girish.simple.recursive;
 public class StringRecursion {
 
 	public static void main(String[] args) {
-		String str = "123456789";
+		String str = "malayalam";
 		System.out.println(reverse(str));
 	}
 
